@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center> <h1 style="color: red;">Welcome in Registration Form</h1></center>
+    <form method="POST" action="/create">
+        {% csrf_token %}
+<table border="1" align="center" >
+
+    <tr>
+        <td>Enter Name</td>
+        <td><input type="text" name="uname"></td>
+    </tr>
+     <tr>
+        <td>Enter Email</td>
+        <td ><input type="email" name=uemail></td>
+     </tr>
+     <tr>
+        <td>Enter Mobilnumber</td>
+        <td><input type="number" name="mobile"></td>
+     </tr>
+     <tr>
+        <td>Message: </td>
+        <td><textarea name="msg" cols="30" rows="10"></textarea></td>
+     </tr>
+     <tr>
+        <td colspan="2" align="center"> <input type="submit" value="search"></td>
+     </tr>
+</table>
+
+    </form>
+</body>
+</html>
